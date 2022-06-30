@@ -9,6 +9,11 @@
  *on your Linux to test the -m32 gcc option
  */
 int main(void)
+/**
+ * main - Entry Point
+ * Description: 'The Program is give the size of data types'
+ * Return: Always the 0 value (Success)
+ */
 {
 	char charType;
 	int intType;
