@@ -5,26 +5,26 @@
  * Return: Always 0 (Success)
  */
 
-int main(void) 
-{ 
-int var; 
+int main(void)
 
-for (var = 0; var < 9; var++) 
-{ 
-int ii; 
-for (ii = var + 1; ii < 10; ii++) 
 {
-putchar((var % 10) + '0');
-putchar((ii % 10) + '0');
-if (var != 8)
+int number_left;
+int number_right;
+
+for (number_left = 48; number_right <= 57; number_left++)
 {
+for (number_right = number_left + 1 ; number_right <= 57; number_right++)
+{
+	putchar(number_left);
+	putchar(number_right);
+	if ((number_left == 57) && (number_right == 57))
+	{
+		break;
+}
 putchar(',');
-putchar(' ');
-} 
-else 
-continue;
+putchar (' ');
 }
 }
 putchar('\n');
-return (0);
+return (0);
 }
