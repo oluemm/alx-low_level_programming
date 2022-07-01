@@ -6,7 +6,7 @@
  * main - Entry point of the program
  * This simple programme checks if a number is
  * +ve, -ve or zero
- * Return 0 to show success
+ * Return: Always 0 to show success
  */
 
 int main(void)
