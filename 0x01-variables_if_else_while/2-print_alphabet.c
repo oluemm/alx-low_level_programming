@@ -6,16 +6,18 @@
  *
  */
 
-int main()
+int main(void)
 {
-    char c;
+    char alphabets;
     for (
-        c = 'a';
-        c <= 'z';
-        ++c
+        alphabets = 'a';
+        alphabets <= 'z';
+        ++alphabets
         )
-        putchar(c);
+    {
+	    putchar(alphabets);
+    }	
     putchar("\n");
-    return 0;
+    return (0);
 }
 
