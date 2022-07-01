@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main : Entry point of the program
+ * main - Entry point of the program
  * This simple programme checks if a number is
  * +ve, -ve or zero
+ * Return 0 to show success
  */
 
 int main(void)
@@ -14,7 +16,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 0 )
+	if (n>0)
 	{
 		printf("%d is positive\n", n);
 	}
