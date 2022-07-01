@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main : Entry point of the program
- * This simple programme checks if a number is 
+ * This simple programme checks if a number is
  * +ve, -ve or zero
  */
 
@@ -16,13 +16,13 @@ int main(void)
 	/* your code goes there */
 	if (n > 0 )
 	{
-		printf("%d is positive\n",n);
+		printf("%d is positive\n", n);
 	}
 	else if (n<0)
 	{
-		printf("%d is negative\n",n);
+		printf("%d is negative\n", n);
 	}
 	else
-		printf("%d is zero\n",n);
+		printf("%d is zero\n", n);
 	return (0);
 }
