@@ -1,30 +1,37 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Entry point for the program
+ * print numbers from 00 to 99.
+(*
+ * Return: 0 on success
  */
-
 int main(void)
+{
+int i = '0';
+int j = '0';
 
+while (i <= '9')
 {
-int number_left;
-int number_right;
-
-for (number_left = 48; number_right <= 57; number_left++)
+while (j <= '9')
 {
-for (number_right = number_left + 1 ; number_right <= 57; number_right++)
+if (!(i > j || i == j))
 {
-	putchar(number_left);
-	putchar(number_right);
-	if ((number_left == 57) && (number_right == 57))
-	{
-		break;
-}
-putchar(',');
-putchar (' ');
-}
-}
+putchar(i);
+putchar(j);
+if (i == '8' && j == '9')
+{
 putchar('\n');
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+}
+j++;
+}
+j = '0';
+i++;
+}
 return (0);
 }
