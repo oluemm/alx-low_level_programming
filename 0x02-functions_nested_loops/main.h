@@ -1,12 +1,11 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main : Program's entry point
  * Prints out the word `_putchar`
  * Return: (0) Success
  */
 
-int main()
+int _putchar()
 {
-	_putchar();
-	return (0);
+	printf("_putchar\n");
 }
