@@ -1,30 +1,27 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main -Program entry point
- * Program prints out the alphabets in lower case
- * Return: 0 on success, 1 on error
+ * print_alphabet_x10 - print alphabet
+ *
+ * Return: Always 0.
  */
-
-int print_alphabet()
+void print_alphabet_x10(void)
 {
-char alphabets;
+int alphabet;
+int count;
 
-for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+
+count = 0;
+while (count < 10)
 {
-putchar(alphabets);
+for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+{
+_putchar(alphabet);
 }
 
-putchar('\n');
-return (0);
+count++;
+_putchar('\n');
 }
 
-int main(void)
-{
-	int num=0;
-	while(num<10)
-	{
-		print_alphabet();
-		num++;
-	}
-    return (0);
+
 }
