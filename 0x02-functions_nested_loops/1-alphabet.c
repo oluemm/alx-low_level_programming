@@ -1,21 +1,19 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main -Program entry point
  * Program prints out the alphabets in lower case
  * Return: 0 on success, 1 on error
  */
 
-int print_alphabet()
+void print_alphabet(void)
 {
-char alphabets;
-
-for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
-{
-putchar(alphabets);
-}
-
-putchar('\n');
-return (0);
+	char alphabets;
+	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+	{
+		putchar(alphabets);
+	}
+	putchar('\n');
 }
 
 int main(void)
