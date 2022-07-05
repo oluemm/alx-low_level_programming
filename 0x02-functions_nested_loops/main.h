@@ -5,7 +5,7 @@
  * Return: (0) Success
  */
 
-int _putchar()
+void _putchar()
 {
 	printf("_putchar\n");
 }
