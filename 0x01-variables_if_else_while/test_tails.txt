@@ -1,0 +1,26 @@
+00 -- Hello nigga, how u dey nau.
+00 -- Hello nigga, how u dey nau.
+01 --	I dey fine jare, how work be like today?
+02 -- 		Hello nigga, how u dey nau
+05 -- I dey fine jare, how work be like today?
+04 -- 	how work be like today?
+03 -- Hello nigga, how u dey nau.
+03 -- Hello nigga, how u dey nau.
+03 -- Hello nigga, how u dey nau.
+06 --	I dey fine jare, how work be like today
+06 --	I dey fine jare, how work be like today
+06 -- 	I dey fine jare, how work be like today
+05 -- I dey fine jare, how work be like today?
+10 -- Hello nigga, how u dey nau.
+20 -- Hello nigga, how u dey nau.
+31 --    I dey fine jare, how work be like today?
+42 --            Hello nigga, how u dey nau
+55 -- I dey fine jare, how work be like today?
+64 --	how work be like today?
+73 -- Hello nigga, how u dey nau.
+21 -- Hello nigga, how u dey nau.
+10 -- Hello nigga, how u dey nau.
+12 --	I dey fine jare, how work be like today
+13 --	I dey fine jare, how work be like today
+14 --	I dey fine jare, how work be like today
+15 -- I dey fine jare, how work be like today?
