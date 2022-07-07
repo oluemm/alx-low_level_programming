@@ -6,7 +6,8 @@
 
 void print_line(int n)
 {
-	int a,k;
+	int a, k;
+
 	k = 95;
 
 	if (n > 0)
