@@ -5,7 +5,9 @@
 |[0-main.c](0-main.c) |checks 0-isupper |
 |[0-isupper.c](0-isupper.c)|Function that checks for uppercase character.|
 |[1-isdigit.c](1-isdigit.c)|function that checks for a digit (i.e. 0 through 9).|
-|[2-mul.c](2-mul.c)||
+|[2-mul.c](2-mul.c)|function that multiplies two integers|
+|[2-main.c](2-main.c)|checks 2-mul.c|
+
 
 
 ##### 0. isupper<br>
