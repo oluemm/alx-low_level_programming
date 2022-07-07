@@ -1,8 +1,9 @@
 ## C - More functions, more nested loops
 
-| SN | Content | Summary |
-| ------ | ------ | ------ |
-
+| Content | Summary |
+| ------ | ------ |
+|[0-main.c](0-main.c) |checks 0-isupper |
+|[0-isupper.c](0-isupper.c)|Function that checks for uppercase character.|
 
 ##### 0. isupper<br>
 Write a function that checks for uppercase character.
@@ -14,13 +15,13 @@ FYI: The standard library provides a similar function: isupper. Run man isupper 
 
 ```
 julien@ubuntu:~/0x04$ cat 0-main.c
-`#include "main.h"
-`#include <stdio.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
- `* main - check the code.
+  * main - check the code.
   *
- `* Return: Always 0.
+  * Return: Always 0.
   */
 int main(void)
 {
@@ -38,3 +39,7 @@ A: 1
 a: 0
 julien@ubuntu:~/0x04$
 ```
+#### Repo:<br>
+GitHub repository: alx-low_level_programming<br>
+Directory: 0x04-more_functions_nested_loops<br>
+File: [0-isupper.c](0-isupper.c)
