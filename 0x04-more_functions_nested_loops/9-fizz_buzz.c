@@ -3,6 +3,7 @@
  * main - Entry point
  * Prints 1 - 100
  * tags Fizz, Buzz or FizzBuzz
+ * Return: Always 0-- success
  */
 
 int main(void)
@@ -29,4 +30,5 @@ int main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
