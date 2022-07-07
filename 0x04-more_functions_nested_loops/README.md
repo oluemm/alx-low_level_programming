@@ -4,7 +4,7 @@
 | ------ | ------ | ------ |
 
 
-####0. isupper
+##### 0. isupper<br>
 Write a function that checks for uppercase character.
 
 Prototype: int _isupper(int c);
