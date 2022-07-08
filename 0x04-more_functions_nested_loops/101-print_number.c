@@ -5,34 +5,30 @@
  */
 void print_number(int n)
 {
-	char sign;
+	int len, val, itr, exp, cache;
 
-	if (n < 0)
+	val = n;
+	exp = len = 1;
+/*Check for negative values*/
+	if (val < 0)
 	{
-		sign = '-';
-		n = -1 * n;
-		_putchar(sign);
+		val = -1 * val;
+		_putchar('-');
 	}
-	if (n >= 1000)
+	cache = val;
+	while (cache >= 10)
 	{
-		_putchar((n / 1000) + '0');/*first digit*/
-		_putchar(((n / 100) % 10) + '0');
-		_putchar(((n % 100) / 10) + '0');/*third digit*/
-		_putchar(((n % 100) % 10) + '0');/*last*/
+		len++;
+		cache = cache / 10;
 	}
-	else if (n >= 100 && n < 1000)
+	for (itr = 1; itr < len; itr++)
 	{
-		_putchar((n / 100) + '0');/*first digit*/
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 100) + '0');/*third digit*/
+		exp = exp * 10;
 	}
-	else if (n >= 10 && n < 100)
+	while (exp > 1)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
+		_putchar((val / exp) % 10 + '0');
+		exp = exp / 10;
 	}
-	else
-	{
-		_putchar(n + '0');
-	}
+	_putchar(val % 10 + '0');
 }
