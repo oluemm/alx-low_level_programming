@@ -12,15 +12,11 @@ int main(void)
 	num = 612852475143;
 	for (fac = 2; fac < num; fac++)
 	{
-		if (num % fac == 0)
+		while (num % fac == 0)
 		{
 			num = num / fac;
 		}
-		else
-		{
-			continue;
-		}
-		printf("%li\n", fac);
 	}
+	printf("%li\n", fac);
 	return (0);
 }
