@@ -5,14 +5,14 @@
  */
 void print_number(int n)
 {
-	int len, val, itr, exp, cache;
+	short len, val, itr, exp, cache;
 
 	val = n;
 	exp = len = 1;
 /*Check for negative values*/
 	if (val < 0)
 	{
-		val = -1 * val;
+		val *= -1;
 		_putchar('-');
 	}
 	cache = val;
@@ -23,12 +23,12 @@ void print_number(int n)
 	}
 	for (itr = 1; itr < len; itr++)
 	{
-		exp = exp * 10;
+		exp *= 10;
 	}
 	while (exp > 1)
 	{
 		_putchar((val / exp) % 10 + '0');
-		exp = exp / 10;
+		exp /= 10;
 	}
 	_putchar(val % 10 + '0');
 }
