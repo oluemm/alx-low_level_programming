@@ -12,11 +12,10 @@ void print_rev(char *s)
 	{
 		i++;
 	}
-	i--;
 	/*begins to print from the last string backward*/
-	while (s[i] != '\0')
+	for (i = i - 1;i >= 0; i--)
 	{
-		_putchar(s[i--]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
