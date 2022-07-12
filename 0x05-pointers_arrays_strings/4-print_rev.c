@@ -7,14 +7,14 @@ void print_rev(char *s)
 {
 	int i;
 
-	while (s[i] != '\0')
 	/*Runs cursor to the end of the given string*/
+	while (s[i] != '\0')
 	{
 		i++;
 	}
 	i--;
-	while (s[i] != '\0')
 	/*begins to print from the last string backward*/
+	while (s[i] != '\0')
 	{
 		_putchar(s[i--]);
 	}
