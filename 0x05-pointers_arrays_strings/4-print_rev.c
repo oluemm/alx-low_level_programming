@@ -7,6 +7,7 @@ void print_rev(char *s)
 {
 	int i;
 
+	i = 0;
 	/*Runs cursor to the end of the given string*/
 	while (s[i] != '\0')
 	{
