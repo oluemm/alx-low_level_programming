@@ -8,7 +8,7 @@
  * @size_r: size for result
  * Return: r
  */
-char *infinite_add(char *n1, char *n2, char *r, char *size_r)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i, j, n;
 
