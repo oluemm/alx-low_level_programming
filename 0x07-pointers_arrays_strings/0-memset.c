@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * _memset - replaces the output values of a given array s
  * @s: array to be manipulated
