@@ -4,10 +4,9 @@ void print_diagsums(int *a, int size)
 {
     int sum1 = 0;
     int sum2 = 0;
-    
 
-    int i = 0;
-    int y = 0;
+
+    int i=0;
 
     while (i < (size*size))
     {
@@ -15,17 +14,14 @@ void print_diagsums(int *a, int size)
         {
             sum1 +=a[i];
         }
-        i++;
-    }
-    
-
-    while ( y < ((size*size)-1))
-    {
-        if ((y % (size-1)) == 0)
+        if ((i % (size-1)) == 0 && i != ((size * size) - 1) && i != 0)
         {
-            sum2 +=a[y];
+            sum2 +=a[i];
         }
-        y++;
+        i++;
+
     }
     printf("%d, %d \n",sum1,sum2);
+
+
 }
