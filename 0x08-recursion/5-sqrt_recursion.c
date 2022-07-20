@@ -10,7 +10,7 @@ int find_root(int n, int i)
 	{
 		return (i);
 	}
-	else if ((n > 0) && (i < n/2))
+	else if ((n > 0) && (i < n / 2))
 	{
 		return (checker(n, i + 1));
 	}
