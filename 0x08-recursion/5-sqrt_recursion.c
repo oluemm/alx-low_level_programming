@@ -12,7 +12,7 @@ int find_root(int n, int i)
 	}
 	else if ((n > 0) && (i < n / 2))
 	{
-		return (checker(n, i + 1));
+		return (find_root(n, i + 1));
 	}
 	else
 	{
@@ -35,7 +35,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (checker(n, 1));
+		return (find_root(n, 1));
 	}
 	return (-1);
 }
