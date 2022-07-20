@@ -2,8 +2,6 @@
 /**
  * find_root - finds the root
  * @i: starting point
- * _sqrt_recursion - finds the square root n
- * @n: number to find its root
  * Return: Returns square root
  */
 int find_root(int n, int i)
@@ -21,6 +19,11 @@ int find_root(int n, int i)
 		return (-1);
 	}
 }
+/**
+* _sqrt_recursion - finds the square root n
+*  @n: number to find its root
+*  Return: Returns square root
+*/
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
