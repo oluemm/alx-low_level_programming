@@ -2,6 +2,7 @@
 /**
  * find_root - finds the root
  * @i: starting point
+ * @n: number
  * Return: Returns square root
  */
 int find_root(int n, int i)
