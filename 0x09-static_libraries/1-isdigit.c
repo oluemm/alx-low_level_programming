@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * _isdigit - program begins here
- * @c: input
- * program checks for digits
- * Return: 1 if it is and 0 is not
+ * _isdigit - Function to check for digits between 0 and 9
+ * @c: Parameter
+ *
+ * Return: Either 1 or 0
  */
 
 int _isdigit(int c)
@@ -12,6 +13,9 @@ int _isdigit(int c)
 	{
 		return (1);
 	}
+
 	else
+	{
 		return (0);
+	}
 }

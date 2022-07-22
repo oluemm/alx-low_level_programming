@@ -1,29 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _abs - value absolute
+ * _abs - Entry Point
+ * @c: Function to give absolute value
  *
- *@n: The int to print
- * Return: Always 0.
+ * Return: Always 0
  */
 
-int _abs(int n)
+int _abs(int c)
 {
 
-if (n < 0)
-{
-return (n * (-1));
-}
+	if (c < 0)
+	{
+		return (c * (-1));
+	}
+	else
+	{
+		return (c);
+	}
 
-else if (n == 0)
-{
-return (0);
-}
-
-else
-{
-return (n);
-}
-
+	return (0);
 }

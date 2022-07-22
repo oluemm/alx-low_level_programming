@@ -1,18 +1,24 @@
 #include "main.h"
+
 /**
- * _memset - replaces the output values of a given array s
- * @s: array to be manipulated
- * @b: character used to replace
- * @n: number of bytes (spaces) to replace in the array
- * Return: Returns the changed array
+ * _memset - function that fills memory with a constant byte.
+ * @s: pointer to memory area
+ * @b: char to be filled
+ * @n: Number of bytes to be filled
+ *
+ * Return: always s
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;/*initialize and iterator i*/
+	/* int b is the replacer and n is the number of space */
+	unsigned int i;
 
-	for (i = 0; i < n; i++)/*loop thru array; stop at user defined point*/
+	for (i = 0; i < n; i++)
 	{
-		s[i] = b;/*dereferencing each given value of the array*/
+		/*dereferencing the value of s */
+		s[i] = b;
 	}
-	return (s);/*return the array*/
+
+	return (s);
 }

@@ -1,22 +1,43 @@
 #include "main.h"
+
 /**
- * _strcat - Concatenates 2 strings
- * @dest: Destination string
- * @src: Source string
- * Return: Returns the concatenated string.
+ * _strcat - Function to concatenate two strings
+ * @dest: 1st String
+ * @src: 2nd string
+ *
+ * Return: Always dest.
  */
+
 char *_strcat(char *dest, char *src)
 {
-	int i, j;/* i is the index of dest, j is the index of src */
+	char result[1000]; /* Initializing an array for the concatenated strings */
+	int i = 0;
+	int y = 0;
 
-	for (i = 0; dest[i] != '\0'; i++)/*run the index of i to the end of string*/
+	while (dest[i] != '\0') /* Putting the 1st string in result. */
 	{
+		result[y] = dest[i];
+		i++;
+		y++;
 	}
-	for (j = 0; src[j] != '\0'; j++)/*initialize a for loop*/
+	i = 0;
+	while (src[i] != '\0') /* Joining the 2nd string with the first in result. */
 	{
-		dest[i] = src[j];/*append the values of src to dest*/
-		i++;/*increment i*/
+		result[y] = src[i];
+		i++;
+		y++;
 	}
-	dest[i] = '\0';/*append the null character to the end of the string*/
-	return (dest);
+	result[y] = '\0';
+
+	i = 0;
+	y = 0;
+	while (result[y] != '\0') /* Putting the result into dest. */
+	{
+		dest[i] = result[y];
+		y++;
+		i++;
+	}
+	dest[i] = '\0'; /* Adding the null terminator */
+
+	return (dest); /* returns the concatenated string*/
 }

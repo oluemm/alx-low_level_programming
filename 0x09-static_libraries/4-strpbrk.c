@@ -1,10 +1,13 @@
 #include "main.h"
+
 /**
- * _strpbrk - function that searches a string for any of a set of bytes
- * @s: given string
- * @accept: search parameters
- * Return: similar values only
+ * _strpbrk - Function that searches a string for any set of bytes
+ * @s: String to be searched
+ * @accept: set of bytes to look for in s
+ *
+ * Return: Always (s + i).
  */
+
 char *_strpbrk(char *s, char *accept)
 {
 	int i = 0;
@@ -15,9 +18,9 @@ char *_strpbrk(char *s, char *accept)
 
 		while (accept[y] != '\0')
 		{
-			if (s[i] == accept[y])/*Comparison of strings*/
+			if (s[i] == accept[y])
 			{
-				return (s + i);/*returning the character that is common*/
+				return (s + i);
 			}
 			y++;
 		}
