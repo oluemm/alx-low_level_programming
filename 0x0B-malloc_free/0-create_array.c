@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * create_array - Entry point
  * @size: size of the array
  * @c: character to fill the array
  * Return: Always 0 (Success)
