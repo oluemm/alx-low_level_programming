@@ -7,15 +7,20 @@
 char *_strdup(char *str)
 {
 	char *dup;
-	unsigned int i;
+	int count = 0, i = 0;
 
-	if (str == NULL)
-		return (NULL);
-	dup = malloc(sizeof(char) * (strlen(str) + 1));
-	if (dup == NULL)
-		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
+	{
+		count++;
+		i++;
+	}
+	dup = malloc((count * sizeof(char)) + 1);
+	i = 0;
+	while (i < count)
+	{
 		dup[i] = str[i];
+		i++;
+	}
 	dup[i] = '\0';
 	return (dup);
 }
