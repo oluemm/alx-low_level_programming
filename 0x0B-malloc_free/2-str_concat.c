@@ -35,10 +35,10 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	/*count size total*/
-	size = (_len(s1) + _len(s2) + 1);
+	size = (_strlen(s1) + _strlen(s2) + 1);
 
 	/*malloc*/
-	cat = (char *)malloc(size * sizeof(char));
+	cat = malloc(size * sizeof(char));
 
 	if (cat == 0)
 	{
@@ -46,12 +46,14 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	/*Concatenate arrays*/
-	for (i = 0; *(s1 + i) != '\0'; i++)
-		*(cat + i) = *(s1 + i);
-
-	for (j = 0; *(s2 + j) != '\0'; j++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		*(cat + i) = *(s2 + j);
+		cat[i] = s1[i];
+	}
+
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+		cat[i] = s2[j];
 		i++;
 	}
 
