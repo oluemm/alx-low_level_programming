@@ -19,7 +19,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		free(s);
 		return (NULL);
 	}
-	for (i = 0; i < nmemb * size; i++) /*loop thru array; stop at user defined point*/
+	for (i = 0; i < nmemb * size; i++)
+	/*loop thru array; stop at user defined point*/
 	{
 		s[i] = 0; /*dereferencing each given value of the array*/
 	}
