@@ -34,11 +34,11 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	/*count size total*/
+	/*count size of both strings*/
 	size = (_len(s1) + _len(s2) + 1);
 
-	/*malloc*/
-	cat = malloc(size * sizeof(char));
+	/*malloc using typecasting*/
+	cat = (char *)malloc(size * sizeof(char));
 
 	if (cat == 0)
 	{
