@@ -14,6 +14,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int sum;
 
 	va_start(args, n);
+	if (separator == NULL)
+		separator = "";
 	for (i = 0; i < n; i++)
 	{
 		sum = va_arg(args, int);
