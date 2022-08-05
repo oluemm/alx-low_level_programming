@@ -13,15 +13,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list wrds;
 	char *strig;
 
-	va_start(wrds, n);
+	va_start(wrds, n); /*start iterating the arguments with args for n times*/
 	for (i = 0; i < n; i++)
 	{
-		strig = va_arg(wrds, char *);
-		if (strig)
+		strig = va_arg(wrds, char *); /*assign sting to strig at each run*/
+		if (strig)					  /*check if the arg/string is not null*/
 			printf("%s", strig);
 		else
-			printf("(nil)");
-
+			printf("(nil)"); /*print (nil) if null*/
+		/*print separator as long as it is not null & i is not at the last args*/
 		if (i < n - 1 && separator)
 			printf("%s", separator);
 	}
