@@ -6,13 +6,11 @@
  */
 size_t list_len(const list_t *h)
 {
-	size_t i;		   /*initialize variable i to datatype size_t*/
 	unsigned int size; /*initialize variable for counting*/
 
-	for (i = 0; h != NULL; i++) /*loop thru l-list*/
+	while (h) /*while h is not NULL*/
 	{
-		if (h->str != NULL) /*check if node is NULL*/
-			size++;
+		size++;		 /*increment size*/
 		h = h->next; /*move on to next node*/
 	}
 	return (size);
