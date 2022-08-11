@@ -6,15 +6,18 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t i; /*initialize counter i to datatype size_t*/
+	unsigned int nodes = 0;
 
-	for (i = 0; h != NULL; i++) /*loop thru l-list*/
+	while (h)
 	{
+		printf("[%u] ", h->len);
 		if (h->str == NULL) /*check if node is NULL*/
-			printf("[%d] %s \n", 0, "(nil)");
+			printf("(nil)\n");
 		else
-			printf("[%d] %s \n", h->len, h->str); /*print vals in current node*/
-		h = h->next;							  /*move on to next node*/
+			printf("%s\n", h->str); /*print string in current node*/
+
+		h = h->next;
+		nodes++; /*move on to next node*/
 	}
-	return (i);
+	return (nodes);
 }
