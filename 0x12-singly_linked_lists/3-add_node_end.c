@@ -43,8 +43,8 @@ void *_strdup(const char *src)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *current; /*create 2 vars of type list_t*/
-	char *dupstr;		   /*create a string ptr*/
+	list_t *new, *temp; /*create 2 vars of type list_t*/
+	char *dupstr;		/*create a string ptr*/
 
 	if (str == NULL) /*check if string @str is NULL*/
 		return (NULL);
@@ -63,9 +63,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new; /*make newly added NODE bcom head*/
 		return (*head);
 	}
-	current = *head;
-	while (current->next != NULL) /*if ptr in current is not NULL*/
-		current = current->next;  /*move to the next*/
-	current->next = new;		  /*add new NODE to the end of the list*/
+	temp = *head;
+	while (temp->next != NULL) /*if ptr in current is not NULL*/
+		temp = temp->next;	   /*move to the next*/
+	temp->next = new;		   /*add new NODE to the end of the list*/
 	return (*head);
 }
