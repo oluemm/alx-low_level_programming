@@ -7,6 +7,7 @@
 #include <string.h>
 
 /*===================STRUCT=====================*/
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
