@@ -11,24 +11,17 @@ size_t print_listint_safe(const listint_t *head)
 	size_t num = 0;
 	long int diff;
 
-	if (head == NULL)
+	while (head != NULL)
 	{
-		exit(0);
-	}
-	else
-	{
-		while (head != NULL)
+		diff = head - head->next;
+		num++;
+		printf("[%p] %d\n", (void *)head, head->n);
+		if (diff > 0)
+			head = head->next;
+		else
 		{
-			diff = head - head->next;
-			num++;
-			printf("[%p] %d\n", (void *)head, head->n);
-			if (diff > 0)
-				head = head->next;
-			else
-			{
-				printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-				break;
-			}
+			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
+			exit(0);
 		}
 	}
 
