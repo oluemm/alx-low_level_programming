@@ -47,10 +47,7 @@
 * If value is not present in array or if array is NULL, your function must return -1
 * Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
-```
-code sample
-```
-- [ ] *File:* [0-linear.c](0-linear.c)
+- [x] *File:* [0-linear.c](0-linear.c)
 
 ---
 
