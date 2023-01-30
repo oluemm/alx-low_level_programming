@@ -12,9 +12,11 @@
 
 ## Resources
 * [Linear Search](https://en.wikipedia.org/wiki/Linear_search)
-* [name_1](link)
-* [name_2](link)
+* [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+* [Jump Search](https://en.wikipedia.org/wiki/Jump_search)
+* [Jump Search *](https://www.geeksforgeeks.org/jump-search/)
 * [name_3](link)
+
 
 
 ## Project Overview
@@ -22,14 +24,25 @@
 - [**Mandatory Task**](#mandatory-task)
 	- [Header File](search_algos.h)
 	- [0. Linear search](0-linear.c)
+	- [1. Binary search](1-binary.c)
+	- [2. Big O #0](2-O)
+	- [3. Big O #1](3-O)
+	- [4. Big O #2](4-O)
+	- [5. Big O #3](5-O)
+	- [6. Big O #4](6-O)
+	- [7. Jump search](100-jump.c)
 	- [Task_1](link_to_file)
+	- [Task_1](link_to_file)
+
 - [**Advanced Task**](#advanced-task)
 	- [Task_013](link_to_file)
 	- [Task_014](link_to_file)
+	- [Task_1](link_to_file)
+	- [Task_1](link_to_file)
+	- [Task_1](link_to_file)
+	- [Task_1](link_to_file)
 
----
-
-
+---A
 
 <h2 style="text-align: center;">Tasks</h2>
 
@@ -51,7 +64,7 @@
 
 ---
 
-#### Task_1
+#### 1. Binary search
 
 **Problem:** Write a function that searches for a value in a sorted array of integers using the Binary search algorithm
 
@@ -69,11 +82,6 @@
 ```
 imitor＠excalibur»/0x1E-search_algorithms(main)➜ ./1-binary
 Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-Searching in array: 0, 1, 2, 3
-Searching in array: 2, 3
-Found 2 at index: 2
-
-Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 Searching in array: 5, 6, 7, 8, 9
 Found 7 at index: 7
 
@@ -81,14 +89,75 @@ Searching in array: 0, 1, 2, 3, 4
 Searching in array: 3, 4
 Searching in array: 4
 Found 5 at index: -1
-
-Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-Searching in array: 5, 6, 7, 8, 9
-Searching in array: 8, 9
-Searching in array: 9
-Found 999 at index: -1
 ```
-- [x] *File:* [Task_1](link_to_file)
+- [x] *File:* [1-binary.c](1-binary.c)
+
+---
+
+#### 2. Big O #0
+
+**Problem:** What is the time complexity (worst case) of a linear search in an array of size `n`?
+
+- [x] *File:* [2-O](2-O)
+
+---
+
+#### 3. Big O #1
+
+**Problem:** What is the space complexity (worst case) of an iterative linear search algorithm in an array of size n?
+
+- [x] *File:* [3-O](3-O)
+
+---
+
+#### 4. Big O #2
+
+**Problem:** What is the time complexity (worst case) of a binary search in an array of size n?
+
+- [x] *File:* [4-O](4-O)
+
+---
+
+#### 5. Big O #3
+
+**Problem:** What is the space complexity (worst case) of a binary search in an array of size n?
+
+- [x] *File:* [5-O](5-O)
+
+---
+
+#### 6. Big O #4
+
+**Problem:** What is the space complexity of this function / algorithm?
+```
+int **allocate_map(int n, int m)
+{
+     int **map;
+
+     map = malloc(sizeof(int *) * n);
+     for (size_t i = 0; i < n; i++)
+     {
+          map[i] = malloc(sizeof(int) * m);
+     }
+     return (map);
+}
+```
+- [x] *File:* [4-O](4-O)
+
+---
+
+#### 7. Jump search
+
+**Problem:**
+
+**Requirements:**
+* lorem ipsum
+* lorem ipsum
+
+```
+code sample
+```
+- [ ] *File:* [100-jump.c](100-jump.c)
 
 ---
 
@@ -107,6 +176,20 @@ code sample
 
 ---
 
+#### Task_1
+
+**Problem:**
+
+**Requirements:**
+* lorem ipsum
+* lorem ipsum
+
+```
+code sample
+```
+- [ ] *File:* [Task_1](link_to_file)
+
+---
 
 ### Advanced Task
 
